@@ -12,7 +12,7 @@ export type Repository = {
 export function Repos() {
 
   const { data, isFetching } = useQuery<Repository[]>('repos', async () => {
-    const response = await axios.get('https://api.github.com/users/nicolasecurity/repos');
+    const response = await axios.get('https://api.github.com/users/LukeSmithxyz/repos');
 
     return response.data;
   }, {
